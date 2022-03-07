@@ -1,0 +1,17 @@
+---
+terraform_path: ''
+use_azcli: false
+backendfile: prod/backend.tfvars
+auto-approve: true
+reconfigure: true
+run_apply: true
+run_output: true
+planout: out.tfplan
+azure_credentials:
+  subscriptionId: xxxxxxx-xxxxx-xxxxx-xxx-xxxxxxx
+  clientId: xxxxxxx-xxxxx-xxxxx-xxx-xxxxxxx
+  tenantId: xxxxxxx-xxxxx-xxxxx-xxx-xxxxxxx
+varfiles:
+- prod/env-vars.tfvars
+vars:
+outputToAzDo:
